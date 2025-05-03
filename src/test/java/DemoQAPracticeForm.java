@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 import generationData.*;
 import org.junit.jupiter.api.BeforeAll;
 import registration.*;
-import java.io.File;
+
 import java.io.IOException;
 
 public class DemoQAPracticeForm  {
@@ -17,7 +17,7 @@ public class DemoQAPracticeForm  {
     @Test
     void CreateNewUser() throws IOException {
         StudentData data = GenerateData.generate();
-        NewStudent student = new NewStudent();
+        CreateNewStudent student = new CreateNewStudent();
         student.fillInFullName(data.firstName, data.lastName);
         student.fillUserEmail(data.userEmail);
         student.chooseGender(data.userGender);

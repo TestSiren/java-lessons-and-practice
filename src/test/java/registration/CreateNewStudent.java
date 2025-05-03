@@ -6,8 +6,8 @@ import java.io.IOException;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
-public class NewStudent {
-    public NewStudent fillInFullName(String firstNameValue, String lastNameValue)
+public class CreateNewStudent {
+    public CreateNewStudent fillInFullName(String firstNameValue, String lastNameValue)
     {
         $("[placeholder='First Name']").setValue(firstNameValue);
         $("[placeholder='Last Name']").setValue(lastNameValue);
