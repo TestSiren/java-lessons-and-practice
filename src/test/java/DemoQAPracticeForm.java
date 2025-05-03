@@ -9,7 +9,8 @@ public class DemoQAPracticeForm  {
     @BeforeAll
     public static void setUp() {
         Settings.configure();
-        PageOpener.openPracticeForm();
+        String Url = "/automation-practice-form";
+        PageOpener.openPracticeForm(Url);
 
     }
 
