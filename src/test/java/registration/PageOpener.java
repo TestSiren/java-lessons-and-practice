@@ -9,9 +9,9 @@ public class PageOpener {
 
     public static void openPracticeForm (String Url)
     {
-      //  String absoluteUrl = "/automation-practice-form"; // bad practice. Лишняя строчка
+        //String absoluteUrl = "/automation-practice-form"; // bad practice. Лишняя строчка
         Configuration.baseUrl = BASE_URL;
-        open(Url); // Лучше, потому что чище и понятнее.
+        open(Url);
         $("h1[class*='text-center']").shouldHave(text("Practice Form"));
     }
 }

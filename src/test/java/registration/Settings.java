@@ -3,6 +3,8 @@ package registration;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class Settings {
@@ -18,10 +20,5 @@ public class Settings {
         Configuration.browserCapabilities = options;
         Configuration.timeout = 10000; // ожидание элементов
         Configuration.pageLoadTimeout = 60000; // ожидание загрузки страницы
-    }
-
-    public static void openNewWindowBrowser(String url)
-    {
-        open(url);
     }
 }
